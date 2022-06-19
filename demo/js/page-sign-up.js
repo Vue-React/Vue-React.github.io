@@ -490,7 +490,7 @@ $(document).ready(function(){
 
 
     $("#Button6").click(function(){
-		window.location.href = '../';
+		window.location.href = '../../';
 	});
 
 
