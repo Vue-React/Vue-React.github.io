@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Account Info - Demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Optional (Bootstrap Pack) JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row mainContent">
+
+    <link href="css/fonts-import.css" rel="stylesheet">
+    <link href="css/page-profile-business.css" rel="stylesheet">
+    <link href="css/page-profile-business-m.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#flip").fadeOut(400);
+                //sleep(2000);
+                $("#panel").show('slide', {direction: 'left'}, 700);
+
+            });
+            $("#flip2").click(function () {
+                $("#panel").hide('slide', {direction: 'left'}, 400);
+                $("#flip").show(400);
+            });
+        });
+    </script>
+
+    <div id="panel" class="" style="z-index: 1; position: absolute; height: 100%; box-shadow: 0px 2px 10px #000 /*bdbdbd*/;">
+        Hello! Here is menu area.
+        <div id="flip2"><a href="#" class="scale_sm" title="">< Click <br> to slide Up panel</a></div>
+    </div>
+
+    <div class="col-menu">
+        <div class="d-flex justify-content-center burgerMenu">
+            <a href="#" title=""><img id="flip" src="images/BurgerMenu_1.svg" class="scale_md" alt=""></a>
+        </div>
+    </div>
+    <div class="col accInfo ph-20">
+        <div class="colHead">
+            <h2>Account Info</h2>
+        </div>
+        <div class="midBlock1">
+
+            <div class="row align-items-end mh-0">
+                <div class="col-auto ph-0">
+                    
+                    <img src="images/NaftoGaz_Logo_240px.png" alt="" class="">
+
+                </div>
+                <div class="col userData text-left mt-20">
+                    
+                    <p class="brandName">Нафтогаз Украина</p>
+                    <p class="userNick">@navtogazua</p>
+                    <p class="userEmail">tymofeev@navta.ua</p>
+                    <p class="brush">
+                    <a href="#" title="" class="mt-16 smallBrush1"><img src="images/brush_sm_1.svg" class="scale_sm" alt=""></a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="midBlock2">
+            <span class="grayMini">Organization Info</span><p>
+                <a href="#" title="" class="smallBrush2"><img src="images/brush_sm_1.svg" class="scale_sm" alt=""></a>
+            <h3>НАФТОГАЗ Україна</h3>
+            <p>Газопостачальна компанія "Нафтогаз України" – частина Групи Нафтогаз і прозорий партнер-постачальник 
+                природного газу для приватних споживачів, а також малого та середнього бізнесу.</p>
+        </div>
+        <div class="midBlock2">
+            <span class="grayMini">Account Status</span><p>
+            <h3>Profile Verification</h3>
+            <p>Upload authentication documents to verify your account</p>
+            <div class="row docLineFirst">
+                <div class="col-auto paddRight1">
+                    <a href="#" title=""><img src="images/Up_1.svg" class="scale_md" alt=""></a>
+                </div>
+                <div class="col" >
+                    <div class="row">
+                        <div class="col text-left paddZero grayMini">Income statement</div>
+                        <div class="col text-right paddZero grayMini">Income statement</div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-start paddZero blackBold">2НДФЛ КЛПР</span></div>
+                        <div class="col-shrink d-flex justify-content-end align-self-start blueLink">
+                            <a href="#" title="">Upload </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row docLineNext">
+                <div class="col-auto paddRight1">
+                    <a href="#" title=""><img src="images/Up_1.svg" class="scale_md" alt=""></a>
+                </div>
+                <div class="col" >
+                    <div class="row">
+                        <div class="col text-left paddZero grayMini">Income statement</div>
+                        <div class="col text-right paddZero grayMini">Income statement</div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-start paddZero blackBold">Справка о справке 22ИК</div>
+                        <div class="col-shrink d-flex justify-content-end align-self-start blueLink">
+                            <a href="#" title="">Upload</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="midBlock3">
+
+            <a href="#" title="" class="addClient"><img src="images/addClient_121px.svg" alt=""></a>
+            <p class="blackBold">Добавить клиентов и организации</p>
+            <p>Активный и пасивный доход с клиентов и организаций, расширяя свою бизнес базу</p>
+            
+        </div>
+    </div>
+    <div class="col colRight">
+        <div class="colHead">
+            <h2>Your promotions</h2>
+        </div>
+        <div class="row carouselRow justify-content-center">
+            <div id="carouselIndicators" class="carousel slide text-left bannerFixWidth" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active carouselBlock">
+                        <img src="images/bannerImage.png" alt="" class="bannerImgR">
+                        <p class="bannerHead">Отдыхайте, мы настроим вашу рекламу для быстрого старта</p>
+                        <p class="bannerText">AHU создала свой собственный рекламный алгоритм для вашего быстрого старта в системе</p>
+                        <button type="button" class="btn btn-dark bannerBtn">Настройка рекламы</button>
+                    </div>
+                    <div class="carousel-item carouselBlock">
+                        <img src="images/bannerImage.png" alt="" class="bannerImgR">
+                        <p class="bannerHead">Отдыхайте, мы настроим вашу рекламу для быстрого старта</p>
+                        <p class="bannerText">AHU создала свой собственный рекламный алгоритм для вашего быстрого старта в системе</p>
+                        <button type="button" class="btn btn-dark bannerBtn">Настройка рекламы</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- class="row justify-content-center" -->
+        <p>
+        <div class="row mt-40 mh-20">
+            <div class="col pt-20 text-center respBorder ">
+                <a href="#" title=""><img src="images/GeneralStat.svg" class="scale" alt=""></a><p class="userMenu">
+                    General Statistics
+            </div>
+            <div class="col pt-20 text-center respBorder">
+                <a href="#" title=""><img src="images/MyStocks.svg" class="scale" alt=""></a><p class="userMenu">
+                    My promotions
+            </div>
+            <div class="col pt-20 text-center respBorder">
+                <a href="#" title=""><img src="images/MyDiscounts.svg" class="scale" alt=""></a><p class="userMenu">
+                    My discounts
+            </div>
+        </div>
+
+
+        <h2 class="mt-40">My institutions</h2>
+
+        <p  class=" mt-10">
+        <div class="row tabRow">
+            <div class="col-auto text-center tabColActive">
+                Affiliates
+            </div>
+            <div class="col-auto text-center blackLink tabCol">
+                <a href="#" title="">Organizations</a>
+            </div>
+        </div>
+        <p>
+        <div class="row responsed">
+            <div class="col-auto text-left lineMap1">
+                <a href="#" title=""><img src="images/map_md_1.svg" class="scale_sm" alt=""></a>
+            </div>
+            <div class="col-auto text-left align-middle line1">
+                ФОП, Нафтогаз, г.Киев, ул.Стянченко Степана 44а
+            </div>
+            <div class="col text-right align-middle line1 blackLink">
+                <a href="#" title="">Редактировать</a>
+            </div>	
+        </div>
+        <div class="row responsed">
+            <div class="col-auto text-left lineMap1">
+                <a href="#" title=""><img src="images/map_md_1.svg" class="scale_sm" alt=""></a>
+            </div>
+            <div class="col-auto text-left align-middle line1">
+                ФОП, Нафтогаз, г.Киев, ул.Стянченко Степана 44а
+            </div>
+            <div class="col text-right align-middle line1 blackLink">
+                <a href="#" title="">Редактировать</a>
+            </div>	
+        </div>
+        <div class="row responsed">
+            <div class="col-auto text-left lineMap1">
+                <a href="#" title=""><img src="images/map_md_1.svg" class="scale_sm" alt=""></a>
+            </div>
+            <div class="col-auto text-left align-middle line1">
+                ФОП, Нафтогаз, г.Киев, ул.Стянченко Степана 44а
+            </div>
+            <div class="col text-right align-middle blackLink line1">
+                <a href="#" title="">Редактировать</a>
+            </div>	
+        </div>
+        <p>
+    </div><!-- class="col" -->
+    
+</div><!-- class="row mainContent" -->
+</div><!-- class="container-fluid" -->
+
+</body>
+</html>

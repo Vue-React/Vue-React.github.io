@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Реєстрація - Demo</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Optional (Bootstrap Pack) JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<script type="text/babel" src="js/page-sign-up.js"></script>
+<link href="css/fonts-import.css" rel="stylesheet">
+<link href="css/page-sign-up.css" rel="stylesheet">
+<link href="css/page-sign-up-m.css" rel="stylesheet">
+
+<form class="form" id="myForm" action="">
+<div class="mainArea">
+<div class="col ml-auto mr-auto colMainArea">
+
+	<div id="img1" class="rImg"></div>
+	<div id="img2" class="rImg"></div>
+	<div id="img3" class="rImg"></div>
+	<div id="img4" class="rImg"></div>
+	<div id="img5" class="rImg"></div>
+	<div id="img6" class="rImg"></div>
+
+	<div class="container">
+	<div class="row row1">
+
+<!-- 
+	<div class="alert greenAlert msg align-content-center" role="alert">
+		<div class="row align-content-center">
+			<div class="col-auto mv-9">
+				<img src="images/check_21px.svg" class="" alt="">
+			</div>
+			<div class="col ph-0 mv-9">
+				<b>Данные успешно обновлены.</b> Данные записаны в реестр.
+			</div>
+			<div class="col-auto align-items-center pr-20 mv-9">
+				<a href="#" class="closeMsg" title=""><img src="images/closeBtn_15px.svg" class="scale_sm" alt=""></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="alert redAlert msg align-content-center" role="alert">
+		<div class="row align-content-center">
+			<div class="col-auto mv-9">
+				<img src="images/warning_21px.svg" class="" alt="">
+			</div>
+			<div class="col ph-0 mv-9">
+				<b>Поле не может быть пустым.</b> Заполните пустое поле.
+			</div>
+			<div class="col-auto align-items-center pr-20 mv-9">
+				<a href="#" class="closeMsg" title=""><img src="images/closeBtn_15px.svg" class="scale_sm" alt=""></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="alert whiteAlert msg align-content-center" role="alert">
+		<div class="row align-content-center">
+			<div class="col-auto mv-9">
+				<img src="images/notification_21px.svg" class="" alt="">
+			</div>
+			<div class="col ph-0 mv-9">
+				<b>Нету связи с сервером.</b> Потеряно интернет соединение.
+			</div>
+			<div class="col-auto align-items-center pr-20 mv-9">
+				<a href="#" class="closeMsg" title=""><img src="images/closeBtn_15px.svg" class="scale_sm" alt=""></a>
+			</div>
+		</div>
+	</div>
+-->
+
+	<div id="Slide1" class="col slide">
+		<div class="col col1">
+			
+			<h1>Auto Help Ukraine</h1>
+			<h2>Реєстрація</h2>
+
+			<img src="images/RegStage_1_Info.svg" class="RegStage_Image" alt="">
+
+			<ul class="nav nav-pills" id="pills-tab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link d-flex justify-content-center align-items-center active" id="clientId" data-toggle="pill" href="#pills-home" role="tab" 
+					aria-controls="pills-home" aria-selected="true">Клієнт</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link d-flex justify-content-center align-items-center" id="businessId" data-toggle="pill" href="#pills-profile" role="tab" 
+					aria-controls="pills-profile" aria-selected="false">Бізнес</a>
+			</li>
+			</ul>
+
+			<div class="form-group mt-40">
+				<label for="phoneId">
+					<div class="route1">
+						Номер телефона:
+					</div>
+					<div class="route2">
+						Номер ответственного лица:
+					</div>
+				</label>
+					<input type="text" class="form-control " id="phoneId" 
+							placeholder="+380950000000" maxlength="13">
+					<div id="phoneWarn" class="inputWarnMsg"></div>
+			</div>
+
+			<button id="Button1" type="button" class="btn btn-warning mt-40 btnStyle">Наступний крок</button>
+
+		</div><!-- class="col col1" -->
+	</div><!-- id="Slide1 -->
+
+	<div id="Slide2" class="col">
+		<div class="col1">
+
+			<div>
+			<span><h1 class="d-inline">Auto Help Ukraine</h1></span><p class="brForAdapt"></p>
+			<span class="route1 marker">Клієнт</span><p class="brForAdapt"></p>
+			<span class="route2 marker">Бізнес</span><p class="brForAdapt"></p>
+			</div>
+			
+			<h2>Реєстрація</h2>
+
+			<img src="images/RegStage_1_Info.svg" class="RegStage_Image mb-40" alt="">
+
+			<div class="form-group mt-40">
+				<label for="formGroupExampleInput">СМС код:</label>
+				<input id="smsCodeId" class="form-control" placeholder="" maxlength="5">
+			</div>
+
+			<p class="mt-30"><a href="#" class="">Надіслати заново</a>
+
+			<p class="mt-16"><a href="#" class="">Не приходить пароль</a>
+
+			<p class="mt-30">
+			<button id="Button2" type="button" class="btn btn-warning btnStyle">Наступний крок</button>
+
+			<p class="mt-40">
+
+		</div>
+	</div><!-- id="Slide2 -->
+
+	<div id="Slide3" class="col">
+		<div class="col1">
+
+			<div>
+			<span><h1 class="d-inline">Auto Help Ukraine</h1></span><p class="brForAdapt"></p>
+			<span class="route1 marker">Клієнт</span><p class="brForAdapt"></p>
+			<span class="route2 marker">Бізнес</span><p class="brForAdapt"></p>
+			</div>
+
+			<h2>Персональні данні</h2>
+
+			<img src="images/RegStage_2_Info.svg" class="RegStage_Image mb-40" alt="">
+
+			<div id="route1" class="route1">
+				<!-- route1 -->
+				<div class="form-group mt-40">
+					<label for="formGroupExampleInput">Имя:</label>
+					<input id="firstNameC" type="text" class="form-control" placeholder="" maxlength="255">
+				</div>
+
+				<div class="form-group mt-16">
+					<label for="formGroupExampleInput">Фамилия:</label>
+					<input id="lastNameC" type="text" class="form-control" placeholder="" maxlength="255">
+				</div>
+
+				<div class="form-group mt-16">
+					<label for="formGroupExampleInput">Email:</label>
+					<input id="emailC" type="text" class="form-control" placeholder="" maxlength="255">
+				</div>
+			</div>
+			<div id="route2" class="route2">
+				<!-- route2 -->
+				<div class="form-group mt-40">
+					<label for="formGroupExampleInput">Название организации:</label>
+					<input id="organisation" type="text" class="form-control" placeholder="" maxlength="255">
+				</div>
+
+				<div class="form-group mt-16">
+					<label for="formGroupExampleInput">Имя ответственного лица:</label>
+					<input id="firstNameB" type="text" class="form-control" placeholder="" maxlength="255">
+				</div>
+
+				<div class="form-group mt-16">
+					<label for="formGroupExampleInput">Фамилия ответственного лица:</label>
+					<input id="lastNameB" type="text" class="form-control" placeholder="" maxlength="255">
+				</div>
+
+				<div class="form-group mt-16">
+					<label for="formGroupExampleInput">Email ответственного лица:</label>
+					<input id="emailB" type="text" class="form-control" placeholder="" maxlength="255">
+				</div>
+			</div>
+
+			<p class="mt-40">
+			<button id="Button3" type="button" class="btn btn-warning btnStyle">Наступний крок</button>
+
+			<p class="mt-40">
+
+		</div>
+	</div><!-- id="Slide3 -->
+
+	<div id="Slide4" class="col">
+		<div class="col1">
+
+			<div>
+			<span><h1 class="d-inline">Auto Help Ukraine</h1></span><p class="brForAdapt"></p>
+			<span class="route1 marker">Клієнт</span><p class="brForAdapt"></p>
+			<span class="route2 marker">Бізнес</span><p class="brForAdapt"></p>
+			</div>
+
+			<h2>Реферальний код</h2>
+
+			<img src="images/RegStage_3_Info.svg" class="RegStage_Image mb-40" alt="">
+
+			<div id="route1" class="route1">
+				<!-- route1 -->
+				<div class="form-group mt-40">
+					<label for="formGroupExampleInput">Реферальний код:</label>
+					<input id="refCodeC" type="text" class="form-control" placeholder="" maxlength="255">
+				</div>
+
+				<div class="form-group mt-16">
+					<label for="formGroupExampleInput">Промокод / Код пакета AHU:</label>
+					<input id="promoCode" type="text" class="form-control" placeholder="" maxlength="255">
+				</div>
+
+				<fieldset class="form-group mt-16">
+					<legend>Маєте власне авто?</legend>
+					<div class="row">
+						<div class="col-auto">
+						<span class="radioInput">
+							<input id="doYouHave1" class="" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+						</span>
+						<label class="form-check-label" for="gridRadios1">
+							Так
+						</label>
+						</div>
+						<div class="col-auto">
+						<span class="radioInput">
+							<input id="doYouHave2" class="" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+						</span>
+						<label class="form-check-label" for="gridRadios2">
+							Ні
+						</label>
+						</div>
+						<div class="col-auto d-none">
+						<span class="radioInput">
+							<input id="doYouHave3" class="" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+						</span>
+						<label class="form-check-label" for="gridRadios3">
+							Нет, завтра куплю
+						</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+			<div id="route2" class="route2">
+				<!-- route2 -->
+				<div class="form-group mt-40">
+					<label for="formGroupExampleInput">Налоговый номер налогоплательщика:</label>
+					<input id="taxNumber" type="text" class="form-control" placeholder="" maxlength="255">
+				</div>
+
+				<div class="form-group mt-16">
+					<label for="formGroupExampleInput">Реферальний код AHU <span>(не обязательно)</span>:</label>
+					<input id="refCodeB" type="text" class="form-control" placeholder="" maxlength="255">
+				</div>
+			</div>
+
+			<p class="mt-40">
+			<button id="Button4" type="button" class="btn btn-warning btnStyle">Наступний крок</button>
+
+			<p class="mt-40">
+
+		</div>
+	</div><!-- id="Slide4 -->
+
+	<div id="Slide5" class="col">
+		<div class="col1">
+
+			<div>
+			<span><h1 class="d-inline">Auto Help Ukraine</h1></span><p class="brForAdapt"></p>
+			<span class="route1 marker">Клієнт</span><p class="brForAdapt"></p>
+			<span class="route2 marker">Бізнес</span><p class="brForAdapt"></p>
+			</div>
+
+			<h2>Пароль</h2>
+
+			<img src="images/RegStage_4_Info.svg" class="RegStage_Image mb-40" alt="">
+
+			<div class="form-group mt-40">
+				<label for="formGroupExampleInput">Пароль:</label>
+				<input id="passId1" type="password" class="form-control" placeholder="" maxlength="255">
+			</div>
+
+			<div class="form-group mt-16">
+				<label for="formGroupExampleInput">Повторіть пароль:</label>
+				<input id="passId2" type="password" class="form-control" placeholder="" maxlength="255">
+			</div>
+
+			<p class="mt-22 d-inline-flex p-0 align-items-center">
+
+			<span class="d-inline-flex align-items-center">
+
+			<input class="align-middle" type="checkbox" id="defaultCheck1" value="" style="	width: 19px;
+																				height: 19px;
+																				margin-right: 10px;
+																				padding: 2px 0;
+																				/* border: 2px solid #A5A5A5;
+																				box-sizing: border-box;
+																				border-radius: 4px !important; */
+																				"
+			><span class="checkmark"></span>
+
+			</span><span class="">
+
+			<label class="form-check-label" for="defaultCheck1">
+			Я прочитав, та погоджуюсь з </label> <a href="#" class="confPolitic"
+			data-toggle="modal" data-target=".bd-example-modal-lg">політикою конфіденційності</a>
+			</span>
+
+			<p class="mt-40">
+			<button id="Button5" type="button" class="btn btn-warning btnStyle">Завершити реєстрацію</button>
+
+			<p class="mt-40">
+
+			<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+			<div class="modal-content mt-40 modContent">
+
+			<div class="" style="position: absolute; right: -26px; top: -26px;"><a href="#" class="" data-dismiss="modal" title=""
+			><img src="images/ModalClose.svg" class="" alt=""></a></div>
+
+			<div class="">
+				<img src="images/AhuLogo_sm.png" width="580" height="53" class="" alt="">
+			</div>
+
+			<p class="mt-16">
+			<b>Користувацьке погодження</b> 20.09.26
+
+			<p class="mt-16">
+			Разнообразный и богатый опыт сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. Не следует, однако забывать, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что сложившаяся структура организации требуют определения и уточнения модели развития. Равным образом постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации модели развития. Не следует, однако забывать, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.
+			<p class="mt-16">
+			Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения направлений прогрессивного развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание модели развития. Равным образом постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.
+
+			</div>
+			</div>
+			</div>
+
+		</div>
+	</div><!-- id="Slide5 -->
+
+	<div id="Slide6" class="col">
+		<div class="col1">
+
+		<div>
+			<span><h1 class="d-inline">Auto Help Ukraine</h1></span><p class="brForAdapt"></p>
+			<span class="route1 marker">Клієнт</span><p class="brForAdapt"></p>
+			<span class="route2 marker">Бізнес</span><p class="brForAdapt"></p>
+			</div>
+
+			<h2>Вітаємо, ви готові до роботи!</h2>
+
+			<img src="images/RegStage_5_Info.svg" class="RegStage_Image mt-40" alt="">
+
+			
+			<div class="congrat mt-20">
+			Вітаємо, ви успішно пройшли етап реєстрації!<br>
+			На ваш емейл <b>zatkoahu@gmail.com</b> було вислано
+			посилання на завершеня реєстрації.
+			</div>
+
+			<p class="mt-40">
+			<button id="Button6" type="button" class="btn btn-outline-warning btnStyle">На головну</button>
+
+			<p class="mt-40">
+
+		</div>
+	</div><!-- id="Slide4 -->
+
+	</div><!-- class="row" -->
+	</div><!-- class="container"  -->
+
+</form>
+
+</body>
+</html>

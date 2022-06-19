@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Demo Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Optional (Bootstrap Pack) JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row mainContent">
+
+
+
+
+
+
+
+
+
+
+    <link href="css/fonts-import.css" rel="stylesheet">
+    <link href="css/page-environment-business.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <!-- Тестовый скрипт -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#flip").fadeOut(400);
+            //sleep(2000);
+            $("#panel").show('slide', {direction: 'left'}, 700);
+            
+        });
+        $("#flip2").click(function(){
+            $("#panel").hide('slide', {direction: 'left'}, 400);
+            $("#flip").show(400);
+        });
+    });
+
+    </script>
+
+
+
+
+
+    <div id="panel">
+        Hello! Here is menu area.
+        <div id="flip2"><a href="#" class="scale_sm" title="">< Click <br> to slide Up panel</a></div>
+    </div>
+
+
+
+
+<div class="col-menu">
+
+    <div class="d-flex justify-content-center burgerMenu">
+        <a href="#" title=""><img id="flip" src="images/BurgerMenu_1.svg" class="scale_md" alt=""></a>
+    </div>
+
+</div>
+
+<div class="col">
+
+    <div class="row">
+        <div class="col-auto">
+            <p>
+            <h1>Your environment</h1>
+        </div>
+        <div class="col d-flex justify-content-end align-self-end divSelect">
+            <div class="form-row">
+                <div class="col">
+                    <select class="mdb-select md-form">
+                    <option>New first</option>
+                    <option>Old first</option>
+                    <option>By Name</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <form>
+                    <div>
+                    <input type="text" placeholder="Search here...">
+                    <button type="submit" class="fa fa-search"></button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row tabRow1">
+        <div class="col-auto text-center blackLink tabCol">
+        <a href="#" title="">Clients</a>
+        </div>
+        <div class="col-auto text-center tabColActive">
+        Organizations
+        </div>
+    </div>
+
+    <div class="row tabRow2">
+        <div class="col-1 paddZero">Select</div>
+        <div class="col">Name_of_Organization</div>
+        <div class="col">Type</div>
+        <div class="col">Contacts</div>
+        <div class="col">Email_of_Organization</div>
+        <div class="col">Clients AHU</div>
+        <div class="col">Date of added</div>
+        <div class="col-1 text-right paddZero">Delete</div>
+    </div>
+    <div class="row d-flex align-items-center tabRow3">
+        <div class="col-1 paddZero">
+            <label class="labelContainer">
+            <input type="checkbox" checked="checked"><span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="col font-weight-bold">WOG</div>
+        <div class="col">Организация</div>
+        <div class="col">+380339291335</div>
+        <div class="col">zakupka@ukr.net</div>
+        <div class="col">Да</div>
+        <div class="col">03:22</div>
+        <div class="col-1 text-right paddZero"><a href="#" title=""><img src="images/DeleteBtn_1.svg" alt="" class="scale_sm marginR"></a></div>
+    </div>
+    <div class="row d-flex align-items-center tabRow3">
+        <div class="col-1 paddZero">
+            <label class="labelContainer">
+            <input type="checkbox"><span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="col font-weight-bold">У Коляши</div>
+        <div class="col">Организация</div>
+        <div class="col">+380339291335</div>
+        <div class="col">zakupka@ukr.net</div>
+        <div class="col">Да</div>
+        <div class="col">03:22</div>
+        <div class="col-1 text-right paddZero"><a href="#" title=""><img src="images/DeleteBtn_1.svg" alt="" class="scale_sm marginR"></a></div>
+    </div>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="row d-flex align-items-center tabRow3">
+        <div class="col-1 paddZero">
+            <label class="labelContainer">
+            <input type="checkbox"><span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="col font-weight-bold">У Коляши</div>
+        <div class="col">Организация</div>
+        <div class="col">+380339291335</div>
+        <div class="col">zakupka@ukr.net</div>
+        <div class="col">Да</div>
+        <div class="col">03:22</div>
+        <div class="col-1 text-right paddZero"><a href="#" title=""><img src="images/DeleteBtn_1.svg" alt="" class="scale_sm marginR"></a></div>
+    </div>
+    <div class="row d-flex align-items-center tabRow3">
+        <div class="col-1 paddZero">
+            <label class="labelContainer">
+            <input type="checkbox"><span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="col font-weight-bold">У Коляши</div>
+        <div class="col">Организация</div>
+        <div class="col">+380339291335</div>
+        <div class="col">zakupka@ukr.net</div>
+        <div class="col">Да</div>
+        <div class="col">03:22</div>
+        <div class="col-1 text-right paddZero"><a href="#" title=""><img src="images/DeleteBtn_1.svg" alt="" class="scale_sm marginR"></a></div>
+    </div>
+    <div class="row d-flex align-items-center tabRow3">
+        <div class="col-1 paddZero">
+            <label class="labelContainer">
+            <input type="checkbox"><span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="col font-weight-bold">У Коляши</div>
+        <div class="col">Организация</div>
+        <div class="col">+380339291335</div>
+        <div class="col">zakupka@ukr.net</div>
+        <div class="col">Да</div>
+        <div class="col">03:22</div>
+        <div class="col-1 text-right paddZero"><a href="#" title=""><img src="images/DeleteBtn_1.svg" alt="" class="scale_sm marginR"></a></div>
+    </div>
+    <div class="row d-flex align-items-center tabRow3">
+        <div class="col-1 paddZero">
+            <label class="labelContainer">
+            <input type="checkbox"><span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="col font-weight-bold">У Коляши</div>
+        <div class="col">Организация</div>
+        <div class="col">+380339291335</div>
+        <div class="col">zakupka@ukr.net</div>
+        <div class="col">Да</div>
+        <div class="col">03:22</div>
+        <div class="col-1 text-right paddZero"><a href="#" title=""><img src="images/DeleteBtn_1.svg" alt="" class="scale_sm marginR"></a></div>
+    </div>
+    <div class="row d-flex align-items-center tabRow3">
+        <div class="col-1 paddZero">
+            <label class="labelContainer">
+            <input type="checkbox"><span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="col font-weight-bold">У Коляши</div>
+        <div class="col">Организация</div>
+        <div class="col">+380339291335</div>
+        <div class="col">zakupka@ukr.net</div>
+        <div class="col">Да</div>
+        <div class="col">03:22</div>
+        <div class="col-1 text-right paddZero"><a href="#" title=""><img src="images/DeleteBtn_1.svg" alt="" class="scale_sm marginR"></a></div>
+    </div>
+    <div class="row d-flex align-items-center tabRow3">
+        <div class="col-1 paddZero">
+            <label class="labelContainer">
+            <input type="checkbox"><span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="col font-weight-bold">У Коляши</div>
+        <div class="col">Организация</div>
+        <div class="col">+380339291335</div>
+        <div class="col">zakupka@ukr.net</div>
+        <div class="col">Да</div>
+        <div class="col">03:22</div>
+        <div class="col-1 text-right paddZero"><a href="#" title=""><img src="images/DeleteBtn_1.svg" alt="" class="scale_sm marginR"></a></div>
+    </div>
+    <div class="row d-flex align-items-center tabRow3">
+        <div class="col-1 paddZero">
+            <label class="labelContainer">
+            <input type="checkbox"><span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="col font-weight-bold">У Коляши</div>
+        <div class="col">Организация</div>
+        <div class="col">+380339291335</div>
+        <div class="col">zakupka@ukr.net</div>
+        <div class="col">Да</div>
+        <div class="col">03:22</div>
+        <div class="col-1 text-right paddZero"><a href="#" title=""><img src="images/DeleteBtn_1.svg" alt="" class="scale_sm marginR"></a></div>
+    </div>
+    <div class="row d-flex align-items-center tabRow3">
+        <div class="col-1 paddZero">
+            <label class="labelContainer">
+            <input type="checkbox"><span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="col font-weight-bold">У Коляши</div>
+        <div class="col">Организация</div>
+        <div class="col">+380339291335</div>
+        <div class="col">zakupka@ukr.net</div>
+        <div class="col">Да</div>
+        <div class="col">03:22</div>
+        <div class="col-1 text-right paddZero"><a href="#" title=""><img src="images/DeleteBtn_1.svg" alt="" class="scale_sm marginR"></a></div>
+    </div>
+    <div class="row d-flex align-items-center tabRow3">
+        <div class="col-1 paddZero">
+            <label class="labelContainer">
+            <input type="checkbox"><span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="col font-weight-bold">У Коляши</div>
+        <div class="col">Организация</div>
+        <div class="col">+380339291335</div>
+        <div class="col">zakupka@ukr.net</div>
+        <div class="col">Да</div>
+        <div class="col">03:22</div>
+        <div class="col-1 text-right paddZero"><a href="#" title=""><img src="images/DeleteBtn_1.svg" alt="" class="scale_sm marginR"></a></div>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+	</div><!-- class="row mainContent" -->
+</div><!-- class="container-fluid" -->
+
+
+
+
+
+
+
+
+</body>
+</html>
