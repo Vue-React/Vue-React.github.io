@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkvue_auto"]=self["webpackChunkvue_auto"]||[]).push([[879],{8879:function(u,n,r){r.r(n),r.d(n,{default:function(){return d}});var t=r(3396);const l={class:"about"},e=(0,t._)("h1",null,"О сайте",-1),a=(0,t.Uk)(" Каталог автомобилей с JWT авторизацией и т.д., и т.п."),c=(0,t._)("br",null,null,-1),s=(0,t._)("br",null,null,-1),o=[e,a,c,s];function f(u,n,r,e,a,c){return(0,t.wg)(),(0,t.iD)("div",l,o)}var i={data(){return{}}},v=r(89);const b=(0,v.Z)(i,[["render",f]]);var d=b}}]);
+//# sourceMappingURL=879.c948d14e.js.map
