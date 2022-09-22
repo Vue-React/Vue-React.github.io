@@ -1,17 +1,5 @@
+* { font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
 /* * {
-  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.2rem;
-  color: #8a1c00;
-}
-
-b, strong {
-  font-size: 1.4rem;
-  color: #1a9e00;
-}
-
-* { font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; } */
-
-* {
   font-family: Arial;
   line-height: 1.2rem;
   font-size: 1.2rem;
@@ -22,4 +10,4 @@ b, strong {
   font-family: serif;
   font-size: 1.4rem;
   color: #9c0500;
-}
+} */
